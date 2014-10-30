@@ -30,7 +30,7 @@ function startup(varargin)
     end
   end
   if isdeployed
-      jar_file = '.';
+      jar_file = fullfile(pwd, 'json.jar');
   else
       jar_file = fullfile(fileparts(mfilename('fullpath')), 'java', 'json.jar');
   end
